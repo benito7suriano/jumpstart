@@ -3,7 +3,6 @@ html {
   font-size: 14px;
   font-family: 'Open Sans',sans-serif;
 }
-
 /* Navigation Section */
 .navbar {
   display: flex;
@@ -11,26 +10,28 @@ html {
   align-items: center;
   width: 100%;
 }
-
 .container {
   display: flex;
   justify-content: flex-start;
   margin: 0;
   width: 100%;
 }
-
 .container ul li {
   padding: 0.5rem;
 }
-
 .active {
   color: #399bd1;
 }
 .logo {
   padding: 0 2rem;
 }
-/* Jumbotron Section */
 
+@media only screen and (max-width:767px) {
+  .navbar .container .nav {
+    display: none;
+  }
+}
+/* Jumbotron Section */
 .jumbotron h1 {
   text-align: center;
   font-family: 'Monoton',sans-serif;
@@ -42,7 +43,6 @@ html {
     -1px 1px 0 #000,
     1px 1px 0 #000;
 }
-
 .jumbotron h2 {
   text-align: center;
   color: white;
@@ -53,17 +53,14 @@ html {
     1px 1px 0 #000;
   width: 51.3rem;
 }
-
 .jumbotron {
   display: flex;
 }
-
 .jumbotron-bike {
   background-image: url('../images/jumbotron-bike.jpg');
   margin-top: 4rem;
   padding: 0;
 }
-
 .jumbotron .container {
   margin: 11.85rem auto;
   display: flex;
@@ -71,7 +68,6 @@ html {
   align-items: center;
   justify-content: center;
 }
-
 .jumbotron .btn-primary {
   background-color: #399bd1;
   box-shadow: 0 0 3px rgba(0,0,0,0.5);
@@ -79,6 +75,24 @@ html {
   width: 11.4rem;
   padding: 1.3rem 0;
   text-align: center;
+}
+@media only screen and (max-width:767px) {
+  .jumbotron h1 {
+    font-size: 5.5rem;
+  }
+  .jumbotron h2 {
+    font-size: 1.7rem;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .jumbotron h1 {
+    font-size: 4rem;
+  }
+  .jumbotron h2 {
+    font-size: 1.2rem;
+    width: 100%;
+  }
 }
 
 /* Featured Section */
@@ -126,7 +140,28 @@ html {
   height: auto;
   padding: 0;
 }
+.sub-content {
+  display: flex;
+}
+@media only screen and (max-width: 767px) {
+  .featured .content .image-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .featured .content {
+    flex-direction: column;
+  }
+}
 
+@media only screen and (max-width:480px) {
+  .featured .content .image-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .featured .content {
+    flex-direction: column;
+  }
+}
 /* Projects Section */
 .projects {
   display: flex;
@@ -156,6 +191,19 @@ html {
   margin: 0 0 1.2rem 0;
   padding: 0 0;
 }
+
+@media only screen and (max-width:767px) {
+  .projects {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .projects {
+    flex-direction: column;
+  }
+}
+
 /* Categories Section*/
 .categories p {
   line-height: 0.8;
@@ -179,7 +227,7 @@ html {
 
 .trouble p {
   margin-top: 1.4rem;
-  width: 42rem;
+  width: 40%;
   text-align: center;
 }
 
@@ -190,4 +238,22 @@ html {
   width: 11.4rem;
   padding: 1.3rem 0;
   text-align: center;
+}
+
+@media only screen and (max-width:767px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+  .trouble h1 {
+    line-height: 3rem;
+    text-align: center;
+  }
+  .trouble p {
+    width: 80%;
+  }
+  .trouble .btn-primary {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
 }
